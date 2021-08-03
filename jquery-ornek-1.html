@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+
+
+    <style>
+        
+    
+
+        #dis {
+            width: 100%;
+            height: 150px;
+           
+        }
+        .c1 {
+            width: 15%;
+            height: 150px;
+            margin-left: 20px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            line-height: 150px;
+            float: left;
+            font-weight: bold;
+            font-size: 32px;
+            
+        }
+        #div2 {
+            width: 29%;
+            height: 450px;
+           
+            background-repeat: no-repeat;
+            background-color: gray;
+            color: white;
+            display: none;
+            position: relative;
+            top: 10px;
+            left: 242px;
+        }
+        #div1 {
+            width: 29%;
+            height: 450px;
+            background-repeat: no-repeat;
+            background-color: gray;
+            color: white;
+            display: none;
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+
+        #div3 {
+            width: 29%;
+            height: 450px;
+            background-repeat: no-repeat;
+            background-color: gray;
+            color: white;
+            display: none;
+            position: relative;
+            top: 10px;
+            left: 464px;
+        }
+        #div4 {
+            width: 29%;
+            height: 450px;
+            background-repeat: no-repeat;
+            background-color: gray;
+            color: white;
+            display: none;
+            position: relative;
+            top: 10px;
+            left: 689px;
+        }
+        #div5 {
+            width: 29%;
+            height: 450px;
+            background-repeat: no-repeat;
+            background-color: gray;
+            color: white;
+            display: none;
+            position: relative;
+            top: 10px;
+            left: 910px;
+        }
+        #div6 {
+            width: 29%;
+            height: 450px;
+            background-repeat: no-repeat;
+            background-color: gray;
+            color: white;
+            display: none;
+            position: relative;
+            top: 10px;
+            left: 950px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div id="dis">
+        <img id="img1" src="deniz.jpg" class="c1" />
+        <img id="img2" src="bulut.jpg" class="c1" />
+        <img id="img3" src="hac.jpg" class="c1" />
+        <img id="img4" src="ormanyolu.jpg" class="c1" />
+        <img id="img5" src="otoyol.jpg" class="c1" />
+        <img id="img6" src="dalga.jpg" class="c1" />
+
+    </div>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
+    <div id="div6"></div>
+    
+
+    <script>
+
+        $(function () {
+
+            $("#img2").mouseover(function () {
+
+                $("#div2").fadeIn(2000).css("background-image", "url(bulut.jpg)");
+
+            });
+
+            $("#img2").mouseleave(function () {
+
+                $("#div2").css("display", "none" )
+            });
+
+      
+
+        $("#img1").mouseover(function () {
+
+            $("#div1").fadeIn(2000).css("background-image", "url(deniz.jpg)");
+
+        });
+            $("#img1").mouseleave(function () {
+
+                $("#div1").css("display", "none")
+            });
+      
+
+        $("#img3").mouseover(function () {
+
+            $("#div3").fadeIn(2000).css("background-image", "url(hac.jpg)");
+
+        });
+            $("#img3").mouseleave(function () {
+
+                $("#div3").css("display", "none")
+            });
+     
+        $("#img4").mouseover(function () {
+            
+            $("#div4").fadeIn(2000).css("background-image", "url(ormanyolu.jpg)");
+
+        });
+            $("#img4").mouseleave(function () {
+
+                $("#div4").css("display", "none")
+            });
+     
+        $("#img5").mouseover(function () {
+
+            $("#div5").fadeIn(2000).css("background-image", "url(otoyol.jpg)");
+
+        });
+            $("#img5").mouseleave(function () {
+
+                $("#div5").css("display", "none")
+            });
+
+      
+        $("#img6").mouseover(function () {
+
+            $("#div6").fadeIn(2000).css("background-image", "url(dalga.jpg)");
+
+        });
+            $("#img6").mouseleave(function () {
+
+                $("#div6").css("display", "none")
+            });
+
+        });
+
+
+
+    </script>
+
+
+
+</body>
+</html>

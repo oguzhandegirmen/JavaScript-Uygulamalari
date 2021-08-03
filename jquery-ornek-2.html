@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+
+
+    <style>
+
+        table{
+            border-collapse:collapse;
+            width:50%;
+        }
+        
+        td,th{
+            border:1px solid #dddddd;
+            text-align:center;
+            padding:10px;
+        }
+
+        tr:nth-child(even){
+            background-color:#dddddd;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <input id="ara" type="text" placeholder="Ara.." /><br /><br />
+
+
+    <table id="liste">
+
+        <thead>
+            <tr>
+                <th>İsim</th>
+                <th>Soyisim</th>
+                <th>Telefon</th>
+                <th>Mail</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Doruk</td>
+                <td>Akgül</td>
+                <td>05555555555</td>
+                <td>dorukakgul@gmail.com</td>
+            </tr>
+            <tr>
+                <td>İrem</td>
+                <td>Şişman</td>
+                <td>05111111111</td>
+                <td>iremsisman@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Kazım</td>
+                <td>Bozkurt</td>
+                <td>05222222222</td>
+                <td>kazımbozkurt@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Durmuş Emin</td>
+                <td>Değirmen</td>
+                <td>05312683784</td>
+                <td>emindegirmen@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Oğuzhan</td>
+                <td>Değirmen</td>
+                <td>05354325438</td>
+                <td>degirmenoguzhan60@gmail.com</td>
+            </tr>
+            <tr>
+                <td>İbrahim</td>
+                <td>Değirmen</td>
+                <td>05336628523</td>
+                <td>ibrahimdegirmen@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Bekircan</td>
+                <td>Kısacık</td>
+                <td>05554545454</td>
+                <td>bekircankısacık@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Semavi</td>
+                <td>Çay</td>
+                <td>05284448985</td>
+                <td>semavicay@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Yakup</td>
+                <td>Dündar</td>
+                <td>05444444444</td>
+                <td>yakupdundar@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Serkan</td>
+                <td>İnkaya</td>
+                <td>05333333333</td>
+                <td>serkaninkaya@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Hakan</td>
+                <td>Değirmen</td>
+                <td>05451237852</td>
+                <td>hakandegirmen@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Ahmet Hilmi</td>
+                <td>Yalçın</td>
+                <td>05862655412</td>
+                <td>ahmethilmiyalcın@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Muhammed Furkan</td>
+                <td>Dağ</td>
+                <td>05423548621</td>
+                <td>furkandag@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Yusuf</td>
+                <td>Türkçe</td>
+                <td>01472583675</td>
+                <td>türkceyusuf@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Ömer</td>
+                <td>Kolancı</td>
+                <td>01234567896</td>
+                <td>omerkolancı@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Alişah</td>
+                <td>Görgülü</td>
+                <td>07894561239</td>
+                <td>alisahgörgülü@gmail.com</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+    <script>
+
+        $(function () {
+
+            $("#ara").keyup(function () {
+
+                var deger = $(this).val().toLowerCase();
+
+                $("#liste tr").filter(function () {
+
+                    $(this).toggle($(this).text().toLowerCase().indexOf(deger) > -1  
+
+
+                    );
+                });
+
+            });
+
+
+
+
+        });
+
+
+    </script>
+</body>
+</html>
